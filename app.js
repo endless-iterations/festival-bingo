@@ -1,10 +1,10 @@
 const board = document.getElementById('bingo-board');
 const phrases = [
-  "Glowsticks", "Dust storm", "Mystical stranger", "Neon art", "Spoken word",
-  "Fire dancer", "Cosmic vibes", "DIY costume", "Silent disco", "Solar panel",
-  "Campfire story", "Lost sandal", "Dream journal", "Handmade gift", "Desert mirage",
-  "Group hug", "Random act of kindness", "Sticker swap", "Bike parade", "Sunset howl",
-  "Water refill", "Shade tent", "Face paint", "Festival flag", "Bingo!"
+  "Lost Radio", "ipsum", "Can't Park Here", "ipsum", "Death of a Raddio",
+  "ipsum", "Troll Toll", "ipsum", "ipsum", "ipsum",
+  "Where's The TP?!", "ipsum", "Radio Cross-Chatter", "ipsum", "Not Here to Rage",
+  "ipsum", "ipsum", "ipsum", "ipsum", "ipsum",
+  "Radio Reserection", "ipsum", "Anymore Wristbands", "ipsum", "Found Radio"
 ];
 
 function renderBoard(state = null) {
