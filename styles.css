@@ -15,10 +15,11 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
-  width: 100vw;            /* Full viewport width */
-  height: 100vh;           /* Full viewport height */
+  width: 100vw;               /* Full screen width */
+  height: 100vw;              /* Match height to width for square grid */
   padding: 10px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .square {
