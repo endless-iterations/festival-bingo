@@ -14,34 +14,29 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
-  margin: 0 auto;
-  aspect-ratio: 9 / 16;
-  width: 90vw;
-  max-width: 90vh;
-  height: auto;
-  max-height: 90vh;
-  min-width: 300px;
-  min-height: 400px;
+  gap: 8px;
+  width: 100vw;            /* Full viewport width */
+  height: 100vh;           /* Full viewport height */
+  padding: 10px;
   box-sizing: border-box;
 }
 
 .square {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  font-size: 1rem;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
   border: 2px solid #ccc;
   cursor: pointer;
   user-select: none;
-  font-size: 1.2em;
-  box-sizing: border-box;
+  text-align: center;
+  overflow-wrap: break-word;
+  height: 100%;             /* Fill grid row height */
+  width: 100%;              /* Fill grid column width */
 }
 
 .square.marked {
   background: #ffcc00;
-  text-decoration: line-through;
 }
