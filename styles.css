@@ -1,41 +1,46 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #fdf6e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('background.jpg');
+  background-size: cover; /* Ensures full width */
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-attachment: fixed; /* Optional: keeps image in place while scrolling */
+  overflow: hidden; /* Prevent Scrolling */
 }
 
 #bingo-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
-  margin: 0 auto;
-  aspect-ratio: 9 / 16;
-  width: 90vw;
-  max-width: 90vh;
-  height: auto;
-  max-height: 90vh;
-  min-width: 300px;
-  min-height: 400px;
+  gap: 8px;
+  width: 90vw;               /* Slightly smaller than full width */
+  height: 90vw;              /* Keep square shape */
+  padding: 10px;
   box-sizing: border-box;
+  margin: 0 auto;            /* Horizontally center */
 }
 
 .square {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
-  border: 2px solid #ccc;
+  text-align: center;
+  font-size: 15vmin;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
   cursor: pointer;
   user-select: none;
-  font-size: 1.2em;
   box-sizing: border-box;
 }
 
 .square.marked {
-  background: #ffcc00;
-  text-decoration: line-through;
+  background: #3838384a;
 }
