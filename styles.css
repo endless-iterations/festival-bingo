@@ -2,7 +2,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vw;
   overflow: hidden;
   background-image: url('background.jpg');
   background-size: cover; /* Ensures full width */
