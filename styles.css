@@ -17,10 +17,12 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
-  width: 90vw;               /* Full screen width */
-  height: 90vw;              /* Match height to width for square grid */
+  gap: 8px;
+  width: 90vw;               /* Slightly smaller than full width */
+  height: 90vw;              /* Keep square shape */
+  padding: 10px;
   box-sizing: border-box;
+  margin: 0 auto;            /* Horizontally center */
 }
 
 .square {
